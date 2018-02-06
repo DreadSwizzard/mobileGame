@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class carMovement : MonoBehaviour {
 	public float speed = 5.0f;
-	bool grounded = true;
-
+	bool grounded = false;
+	public float rotationSpeed = 30;
 	// Use this for initialization
 	void Start () {
 		
@@ -13,40 +13,27 @@ public class carMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (grounded == false)
-		{
-			var rot = transform.rotation;
-			rot.x =0;
-			rot.y = 0;
-			rot.z = Input.GetAxis ("Horizontal");
-		}
-		//horizontal stoors the user input when they press a,d,left,right on a scale from -1 to 1
-		float horizontal = Input.GetAxis ("Horizontal");
+		if (grounded == false) {
+			var foo = transform.rotation;
+			foo.x = 0;
+			foo.y = 0;
+			transform.rotation = foo;
+			//horizontal stoors the user input when they press a,d,left,right on a scale from -1 to 1
+			float horizontal = Input.GetAxis ("Horizontal");
 
-		//vertical stores user imput when they press w,s,up,down on a scale from -1 to 1
-		float vertical = Input.GetAxis ("Vertical");
-
-		//create a push variable that combines the user imput
-		Vector2 push = new Vector2(horizontal, vertical);
-		//gameObject.GetComponent<Rigidbody2D> ().velocity = push * speed;
-		var w1 = GameObject.Find("Wheel1").transform.position;
-		var w2 = GameObject.Find ("Wheel2").transform.position;
-		Vector3 pos = w2 - w1;
-		transform.position = pos;
+			//create a push variable that combines the user imput
+			gameObject.GetComponent<Rigidbody2D> ().AddTorque (-horizontal);
+		
+		} 
+	
+	}
+	public void Grounded(){
+		grounded = true;
 	}
 
-	void OnCollisionEnter2D(Collision2D Collision)
-	{
-		if (Collision.gameObject.layer == 8)
-		{
-			grounded = true;
-		}
-		else 
-		{
-			grounded= false;
-		}
+	public void notGrounded(){
+		grounded = false;
 	}
-
 
 
 }
