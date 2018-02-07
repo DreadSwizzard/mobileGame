@@ -112,6 +112,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &161750351 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114016519305417654, guid: 4c0ffbaf32486554ca388f64ba2a16d1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1389414010}
+  m_Script: {fileID: 11500000, guid: 6dd06986c3af2a544be2334276e9a83f, type: 3}
 --- !u!1 &246039583
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,6 +827,8 @@ GameObject:
   - component: {fileID: 1270525683}
   - component: {fileID: 1270525682}
   - component: {fileID: 1270525681}
+  - component: {fileID: 1270525685}
+  - component: {fileID: 1270525686}
   m_Layer: 5
   m_Name: GAS
   m_TagString: Untagged
@@ -863,7 +871,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 161750351}
           m_MethodName: forward
           m_Mode: 1
           m_Arguments:
@@ -951,6 +959,66 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1270525679}
+--- !u!114 &1270525685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1270525679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1707600294}
+          m_MethodName: forward
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!114 &1270525686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1270525679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1434642038}
+          m_MethodName: forward
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1001 &1389414010
 Prefab:
   m_ObjectHideFlags: 0
@@ -1008,6 +1076,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1917540879775626, guid: 4c0ffbaf32486554ca388f64ba2a16d1,
     type: 2}
   m_PrefabInternal: {fileID: 1389414010}
+--- !u!114 &1434642038 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114793890769107610, guid: 4c0ffbaf32486554ca388f64ba2a16d1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1389414010}
+  m_Script: {fileID: 11500000, guid: a9e9a6c851001f74e9865fa2939c19cb, type: 3}
 --- !u!1 &1580056777
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,6 +1181,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1707600294 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114199906912529576, guid: 4c0ffbaf32486554ca388f64ba2a16d1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1389414010}
+  m_Script: {fileID: 11500000, guid: 6dd06986c3af2a544be2334276e9a83f, type: 3}
 --- !u!1 &1865565869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,6 +1199,8 @@ GameObject:
   - component: {fileID: 1865565873}
   - component: {fileID: 1865565872}
   - component: {fileID: 1865565871}
+  - component: {fileID: 1865565875}
+  - component: {fileID: 1865565876}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1161,7 +1243,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 1707600294}
           m_MethodName: backward
           m_Mode: 1
           m_Arguments:
@@ -1249,3 +1331,63 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1865565869}
+--- !u!114 &1865565875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1865565869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 161750351}
+          m_MethodName: backward
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!114 &1865565876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1865565869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1434642038}
+          m_MethodName: backward
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
