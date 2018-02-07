@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WheelRoll : MonoBehaviour {
-	private float horizontal = Input.GetAxis ("Horizontal");
+	private float horizontal;
 	// Use this for initialization
 	void Start () {
-		
+		horizontal = Input.GetAxis ("Horizontal");
 	}
 	
 	// Update is called once per frame
