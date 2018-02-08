@@ -20,6 +20,12 @@ public class WheelRoll : MonoBehaviour {
 
 		//create a push variable that combines the user imput
 		gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
+		if (Input.GetKey (KeyCode.A)) {
+			backward ();
+		}
+		if (Input.GetKey (KeyCode.D)) {
+			forward ();
+		}
 	}
 	public void backward()
 	{
