@@ -19,21 +19,25 @@ public class WheelRoll : MonoBehaviour {
 		//float horizontal = Input.GetAxis ("Horizontal");
 
 		//create a push variable that combines the user imput
-		gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
+		//gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
 		if (Input.GetKey (KeyCode.A)) {
 			backward ();
+			//gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
 		}
 		if (Input.GetKey (KeyCode.D)) {
 			forward ();
+			//gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
 		}
 	}
 	public void backward()
 	{
 		horizontal = -1;
+		gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
 	}
 
 	public void forward()
 	{
 		horizontal = +1;
+		gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
 	}
 }
