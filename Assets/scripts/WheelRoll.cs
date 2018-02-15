@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityStandardAssets.CrossPlatformInput;
 public class WheelRoll : MonoBehaviour {
 	private float horizontal;
+	//private float vertical;
 	// Use this for initialization
 	void Start () {
 		horizontal = Input.GetAxis ("Horizontal");
+		//vertical = Input.GetAxis ("Vertical");
+	
 	}
 	
 	// Update is called once per frame
@@ -28,6 +31,9 @@ public class WheelRoll : MonoBehaviour {
 			forward ();
 			//gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
 		}
+
+		gameObject.GetComponent<Rigidbody2D>().AddTorque(CrossPlatformInputManager.GetAxis("Horizontal"));
+	
 	}
 	public void backward()
 	{
@@ -40,4 +46,6 @@ public class WheelRoll : MonoBehaviour {
 		horizontal = +1;
 		gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
 	}
+
+
 }

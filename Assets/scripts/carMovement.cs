@@ -8,7 +8,13 @@ public class carMovement : MonoBehaviour {
 	bool grounded = false;
 	public float rotationSpeed = 30;
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
+		// call bools
+		vehicleControll doThing = new vehicleControll ();
+		bool forwardBool = doThing.ForwardTrue ();
+		bool backwardBool = doThing.BackwardTrue ();
+
 		horizontal = Input.GetAxis ("Horizontal");
 	}
 	
@@ -24,7 +30,7 @@ public class carMovement : MonoBehaviour {
 
 			//create a push variable that combines the user imput
 			gameObject.GetComponent<Rigidbody2D> ().AddTorque (-horizontal);
-			if (Input.GetKey (KeyCode.A)) {
+			if (Input.GetKey (KeyCode.A) ) {
 				backward ();
 			}
 			if (Input.GetKey (KeyCode.D)) {

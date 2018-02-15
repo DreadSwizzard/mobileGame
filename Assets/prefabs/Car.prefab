@@ -141,7 +141,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1250963589058830}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35.38, y: -2.657773, z: 0}
+  m_LocalPosition: {x: -35.54, y: -2.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4064239745252436}
@@ -198,7 +198,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1265834413267376}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.035681427, y: 0.282, z: -4.640949}
+  m_LocalPosition: {x: -0.035681427, y: 0.245, z: -4.640949}
   m_LocalScale: {x: 5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4956366990905644}
@@ -356,7 +356,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.06726253}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -367,7 +367,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10666667, y: 0.10666667}
+  m_Size: {x: 0.10666667, y: 0.24119174}
   m_EdgeRadius: 0
 --- !u!114 &114016519305417654
 MonoBehaviour:
@@ -662,8 +662,8 @@ WheelJoint2D:
   m_Anchor: {x: 0.28359947, y: -0.043599956}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_Suspension:
-    m_DampingRatio: 0.3
-    m_Frequency: 9
+    m_DampingRatio: 1
+    m_Frequency: 5
     m_Angle: 90
   m_UseMotor: 1
   m_Motor:
@@ -685,8 +685,8 @@ WheelJoint2D:
   m_Anchor: {x: -0.21400034, y: -0.054399937}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_Suspension:
-    m_DampingRatio: 0.3
-    m_Frequency: 9
+    m_DampingRatio: 1
+    m_Frequency: 8
     m_Angle: 90
   m_UseMotor: 1
   m_Motor:
