@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class carMovement : MonoBehaviour {
 	float horizontal;
@@ -36,6 +37,8 @@ public class carMovement : MonoBehaviour {
 			if (Input.GetKey (KeyCode.D)) {
 				forward ();
 			}
+			gameObject.GetComponent<Rigidbody2D>().AddTorque(-CrossPlatformInputManager.GetAxis("Horizontal"));
+
 		} 
 	}
 	public void backward()

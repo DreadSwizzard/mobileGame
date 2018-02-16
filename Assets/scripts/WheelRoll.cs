@@ -31,8 +31,8 @@ public class WheelRoll : MonoBehaviour {
 			forward ();
 			//gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
 		}
-
-		gameObject.GetComponent<Rigidbody2D>().AddTorque(CrossPlatformInputManager.GetAxis("Horizontal"));
+		//Debug.Log(CrossPlatformInputManager.GetAxis("Horizontal"));
+		gameObject.GetComponent<Rigidbody2D>().AddTorque(-CrossPlatformInputManager.GetAxis("Horizontal"));
 	
 	}
 	public void backward()

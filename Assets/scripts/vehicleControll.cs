@@ -20,20 +20,24 @@ public class vehicleControll : MonoBehaviour {
 	public bool ForwardTrue ()
 	{
 		forwardBool = true;
+		return true;
 	}
 	// pointer up
 	public bool ForwardFalse ()
 	{
 		forwardBool = false;
+		return false;
 	}
 	// pointer down
 	public bool BackwardTrue ()
 	{
 		backwardBool = true;
+		return true;
 	}
 	// pointer up
 	public bool BackwardFalse ()
 	{
 		backwardBool = false;
+		return false;
 	}
 }
