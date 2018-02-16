@@ -794,11 +794,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4564467409845144, guid: 99e0c8d8af256ac4db506cce1619a616, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.537
+      value: -0.454
       objectReference: {fileID: 0}
     - target: {fileID: 4527535218036018, guid: 99e0c8d8af256ac4db506cce1619a616, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.492
+      value: -0.474
       objectReference: {fileID: 0}
     - target: {fileID: 4527535218036018, guid: 99e0c8d8af256ac4db506cce1619a616, type: 2}
       propertyPath: m_LocalPosition.x
@@ -816,7 +816,7 @@ Prefab:
     - target: {fileID: 235843581858113196, guid: 99e0c8d8af256ac4db506cce1619a616,
         type: 2}
       propertyPath: m_Anchor.y
-      value: -0.3148
+      value: -0.2816
       objectReference: {fileID: 0}
     - target: {fileID: 235633365141683226, guid: 99e0c8d8af256ac4db506cce1619a616,
         type: 2}
@@ -826,7 +826,7 @@ Prefab:
     - target: {fileID: 235633365141683226, guid: 99e0c8d8af256ac4db506cce1619a616,
         type: 2}
       propertyPath: m_Anchor.y
-      value: -0.29680002
+      value: -0.2896
       objectReference: {fileID: 0}
     - target: {fileID: 235633365141683226, guid: 99e0c8d8af256ac4db506cce1619a616,
         type: 2}
@@ -903,8 +903,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000015319269, y: -0.08507327}
-  m_Size: {x: 0.78376657, y: 0.19709568}
+  m_Offset: {x: 0.008370384, y: -0.14785182}
+  m_Size: {x: 0.9176963, y: 0.3226543}
   m_Direction: 1
 --- !u!1 &817420806
 GameObject:
