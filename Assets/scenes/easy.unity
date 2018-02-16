@@ -219,30 +219,6 @@ Prefab:
       propertyPath: m_Name
       value: Canvas - Car Controls
       objectReference: {fileID: 0}
-    - target: {fileID: 1528840260528524, guid: 0a79b84c346bd7941ac299e41dc24898, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114252679341346480, guid: 0a79b84c346bd7941ac299e41dc24898,
-        type: 2}
-      propertyPath: axisName
-      value: Horizontal
-      objectReference: {fileID: 0}
-    - target: {fileID: 114867526878306444, guid: 0a79b84c346bd7941ac299e41dc24898,
-        type: 2}
-      propertyPath: axisName
-      value: Horizontal
-      objectReference: {fileID: 0}
-    - target: {fileID: 114867526878306444, guid: 0a79b84c346bd7941ac299e41dc24898,
-        type: 2}
-      propertyPath: responseSpeed
-      value: 999
-      objectReference: {fileID: 0}
-    - target: {fileID: 114252679341346480, guid: 0a79b84c346bd7941ac299e41dc24898,
-        type: 2}
-      propertyPath: responseSpeed
-      value: 999
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0a79b84c346bd7941ac299e41dc24898, type: 2}
   m_IsPrefabParent: 0
@@ -346,11 +322,6 @@ Prefab:
     - target: {fileID: 1658259594997704, guid: f0f18e13c70675048976098c646c61db, type: 2}
       propertyPath: m_Name
       value: Canvas - Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 223445988710249138, guid: f0f18e13c70675048976098c646c61db,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0f18e13c70675048976098c646c61db, type: 2}

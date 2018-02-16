@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab98b66288df7b4fa182075f2f12bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axisName: Vertical
+  axisName: Horizontal
   axisValue: 1
   responseSpeed: 999
   returnToCentreSpeed: 3
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab98b66288df7b4fa182075f2f12bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axisName: Vertical
+  axisName: Horizontal
   axisValue: -1
   responseSpeed: 999
   returnToCentreSpeed: 3
