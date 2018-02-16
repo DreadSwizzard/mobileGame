@@ -831,12 +831,12 @@ Prefab:
     - target: {fileID: 235633365141683226, guid: 99e0c8d8af256ac4db506cce1619a616,
         type: 2}
       propertyPath: m_Suspension.m_Frequency
-      value: 9
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 235843581858113196, guid: 99e0c8d8af256ac4db506cce1619a616,
         type: 2}
       propertyPath: m_Suspension.m_Frequency
-      value: 9
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 50641890662553826, guid: 99e0c8d8af256ac4db506cce1619a616,
         type: 2}
@@ -867,7 +867,18 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: -0.305
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 235843581858113196, guid: 99e0c8d8af256ac4db506cce1619a616,
+        type: 2}
+      propertyPath: m_Suspension.m_Angle
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 235633365141683226, guid: 99e0c8d8af256ac4db506cce1619a616,
+        type: 2}
+      propertyPath: m_Suspension.m_Angle
+      value: 90
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 61387013202922900, guid: 99e0c8d8af256ac4db506cce1619a616, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 99e0c8d8af256ac4db506cce1619a616, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &720638440 stripped
@@ -880,6 +891,21 @@ Transform:
   m_PrefabParentObject: {fileID: 4018860636311818, guid: 99e0c8d8af256ac4db506cce1619a616,
     type: 2}
   m_PrefabInternal: {fileID: 714842620}
+--- !u!70 &720638442
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 720638440}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000015319269, y: -0.08507327}
+  m_Size: {x: 0.78376657, y: 0.19709568}
+  m_Direction: 1
 --- !u!1 &817420806
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,7 +1046,7 @@ GameObject:
   - component: {fileID: 836286469}
   - component: {fileID: 836286468}
   - component: {fileID: 836286467}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
