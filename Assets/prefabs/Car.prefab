@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 114793890769107610}
   - component: {fileID: 235762972775187950}
   - component: {fileID: 235236232668815768}
-  - component: {fileID: 61563713997259380}
+  - component: {fileID: 70098936673776182}
   m_Layer: 0
   m_Name: car
   m_TagString: car
@@ -294,31 +294,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.36640882
---- !u!61 &61563713997259380
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1917540879775626}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.010693729, y: 0.15198147}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 3.8, y: 3.8}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.90815127, y: 0.14234047}
-  m_EdgeRadius: 0
 --- !u!61 &61606984071441020
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -369,6 +344,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.10666667, y: 0.24119174}
   m_EdgeRadius: 0
+--- !u!70 &70098936673776182
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1917540879775626}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.014648112, y: 0.1501408}
+  m_Size: {x: 0.7949312, y: 0.17240064}
+  m_Direction: 1
 --- !u!114 &114016519305417654
 MonoBehaviour:
   m_ObjectHideFlags: 1
