@@ -38,13 +38,13 @@ public class WheelRoll : MonoBehaviour {
 	public void backward()
 	{
 		horizontal = -1;
-		gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal*2);
+		gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
 	}
 
 	public void forward()
 	{
 		horizontal = +1;
-		gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal*2);
+		gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
 	}
 
 
