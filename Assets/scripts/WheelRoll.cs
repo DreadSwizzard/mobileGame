@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 public class WheelRoll : MonoBehaviour {
 	private float horizontal;
+	public float speed = 1;
 	//private float vertical;
 	// Use this for initialization
 	void Start () {
@@ -32,19 +33,19 @@ public class WheelRoll : MonoBehaviour {
 			//gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
 		}
 		//Debug.Log(CrossPlatformInputManager.GetAxis("Horizontal"));
-		gameObject.GetComponent<Rigidbody2D>().AddTorque(-CrossPlatformInputManager.GetAxis("Horizontal"));
+		gameObject.GetComponent<Rigidbody2D>().AddTorque(-CrossPlatformInputManager.GetAxis("Horizontal")*speed);
 	
 	}
 	public void backward()
 	{
 		horizontal = -1;
-		gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
+		gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal*speed);
 	}
 
 	public void forward()
 	{
 		horizontal = +1;
-		gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
+		gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal*speed);
 	}
 
 

@@ -30,14 +30,14 @@ public class carMovement : MonoBehaviour {
 			//float horizontal = Input.GetAxis ("Horizontal");
 
 			//create a push variable that combines the user imput
-			gameObject.GetComponent<Rigidbody2D> ().AddTorque (-horizontal);
+			gameObject.GetComponent<Rigidbody2D> ().AddTorque (-horizontal*rotationSpeed);
 			if (Input.GetKey (KeyCode.A) ) {
 				backward ();
 			}
 			if (Input.GetKey (KeyCode.D)) {
 				forward ();
 			}
-			gameObject.GetComponent<Rigidbody2D>().AddTorque(-CrossPlatformInputManager.GetAxis("Horizontal"));
+			gameObject.GetComponent<Rigidbody2D>().AddTorque(-CrossPlatformInputManager.GetAxis("Horizontal")*rotationSpeed);
 
 		} 
 	}
