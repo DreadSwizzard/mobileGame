@@ -12044,6 +12044,26 @@ Prefab:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 235762972775187950, guid: 4c0ffbaf32486554ca388f64ba2a16d1,
+        type: 2}
+      propertyPath: m_Suspension.m_DampingRatio
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 235236232668815768, guid: 4c0ffbaf32486554ca388f64ba2a16d1,
+        type: 2}
+      propertyPath: m_Suspension.m_DampingRatio
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 235236232668815768, guid: 4c0ffbaf32486554ca388f64ba2a16d1,
+        type: 2}
+      propertyPath: m_Suspension.m_Frequency
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 235762972775187950, guid: 4c0ffbaf32486554ca388f64ba2a16d1,
+        type: 2}
+      propertyPath: m_Suspension.m_Frequency
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c0ffbaf32486554ca388f64ba2a16d1, type: 2}
   m_IsPrefabParent: 0
