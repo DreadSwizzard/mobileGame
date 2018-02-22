@@ -302,7 +302,7 @@ Canvas:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 143220319}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -9781,11 +9781,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1399030307200350, guid: 0a79b84c346bd7941ac299e41dc24898, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1541251774084368, guid: 0a79b84c346bd7941ac299e41dc24898, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0a79b84c346bd7941ac299e41dc24898, type: 2}
