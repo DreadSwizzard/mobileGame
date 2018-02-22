@@ -885,6 +885,11 @@ Prefab:
       propertyPath: m_Suspension.m_Angle
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 114141848629187790, guid: 99e0c8d8af256ac4db506cce1619a616,
+        type: 2}
+      propertyPath: rotationSpeed
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61387013202922900, guid: 99e0c8d8af256ac4db506cce1619a616, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 99e0c8d8af256ac4db506cce1619a616, type: 2}

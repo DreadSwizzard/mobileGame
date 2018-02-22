@@ -7772,7 +7772,7 @@ SpriteRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 649071478}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -8043,6 +8043,41 @@ Prefab:
         type: 2}
       propertyPath: rotationSpeed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 235617230904819188, guid: d3436f9679e8b0043ab65cb51d87f263,
+        type: 2}
+      propertyPath: m_AutoConfigureConnectedAnchor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 235518861616086304, guid: d3436f9679e8b0043ab65cb51d87f263,
+        type: 2}
+      propertyPath: m_AutoConfigureConnectedAnchor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 235617230904819188, guid: d3436f9679e8b0043ab65cb51d87f263,
+        type: 2}
+      propertyPath: m_Suspension.m_Frequency
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 235518861616086304, guid: d3436f9679e8b0043ab65cb51d87f263,
+        type: 2}
+      propertyPath: m_Suspension.m_Frequency
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 235518861616086304, guid: d3436f9679e8b0043ab65cb51d87f263,
+        type: 2}
+      propertyPath: m_Suspension.m_DampingRatio
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 235617230904819188, guid: d3436f9679e8b0043ab65cb51d87f263,
+        type: 2}
+      propertyPath: m_Suspension.m_DampingRatio
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50618297500750916, guid: d3436f9679e8b0043ab65cb51d87f263,
+        type: 2}
+      propertyPath: m_UseAutoMass
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d3436f9679e8b0043ab65cb51d87f263, type: 2}
