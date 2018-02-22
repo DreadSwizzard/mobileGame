@@ -5,6 +5,7 @@ using UnityStandardAssets.CrossPlatformInput;
 public class WheelRoll : MonoBehaviour {
 	private float horizontal;
 	public float speed = 1;
+	public float maxSpeed = 10;
 	//private float vertical;
 	// Use this for initialization
 	void Start () {
@@ -25,16 +26,22 @@ public class WheelRoll : MonoBehaviour {
 		//create a push variable that combines the user imput
 		//gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
 		if (Input.GetKey (KeyCode.A)) {
+			if (GetComponent<Rigidbody2D> ().velocity.magnitude < maxSpeed) {
 			backward ();
 			//gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
+			}
 		}
 		if (Input.GetKey (KeyCode.D)) {
-			forward ();
-			//gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
+			if (GetComponent<Rigidbody2D> ().velocity.magnitude < maxSpeed) {
+				forward ();
+				//gameObject.GetComponent<Rigidbody2D>().AddTorque(-horizontal);
+			}
 		}
 		//Debug.Log(CrossPlatformInputManager.GetAxis("Horizontal"));
-		gameObject.GetComponent<Rigidbody2D>().AddTorque(-CrossPlatformInputManager.GetAxis("Horizontal")*speed);
-	
+
+		if (GetComponent<Rigidbody2D> ().velocity.magnitude < maxSpeed) {
+			gameObject.GetComponent<Rigidbody2D> ().AddTorque (-CrossPlatformInputManager.GetAxis ("Horizontal") * speed);
+		}
 	}
 	public void backward()
 	{
