@@ -34,10 +34,12 @@ public class PauseMenu : MonoBehaviour
 	}
 	public void Restart()
 	{
+		Time.timeScale = 1;
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 	public void returnToStart()
 	{
+		Time.timeScale = 1;
 		SceneManager.LoadScene("start");
 	}
 }
